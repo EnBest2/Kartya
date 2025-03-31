@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tanulókártyák</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Tanulókártyák</h1>
+    <label for="apikey">OpenAI API-kulcs:</label>
+    <input type="password" id="apikey" placeholder="sk-..." />
+    <label for="tantargy">Tantárgy:</label>
+    <select id="tantargy">
+      <option>Irodalom</option>
+      <option>Történelem</option>
+      <option>Nyelvtan</option>
+    </select>
+    <textarea id="tetel" placeholder="Ide írd be a tételt..."></textarea>
+    <button id="generate">Kártyák generálása</button>
+    <div id="cards"></div>
+    <button id="modeToggle">Mód: Sötét/Világos</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
